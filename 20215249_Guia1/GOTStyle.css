@@ -1,0 +1,24 @@
+*{
+  color: white  
+}
+
+html{
+  background-color: black;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.centrar{
+  text-align: center;
+}
+
+.negrita {
+  font-weight: bold;
+}
+
+.imagen {
+  width: 80%; /* Ajustando las imágenes para ser más responsivas */
+  max-width: 375px; /* Límite de tamaño máximo para mantener la uniformidad */
+  height: auto;
+  display: block; /* Haciendo que las imágenes se centren en bloque */
+  margin: 0 auto; /* Centrando las imágenes */
+}
