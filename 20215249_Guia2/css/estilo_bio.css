@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+header {
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(to right, #74ACDF, #FFFFFF, #74ACDF);
+    /*padding: 20px 50px;*/
+    font-weight: bold;
+    color: gold;
+    text-align: center;
+    font-size: 75px;
+    margin-bottom: 20px;
+}
+
+section{
+    background-color: lightblue;
+    margin: 20px;
+    padding: 20px;
+
+    /*esto es importante*/
+}
+
+html{
+    font-family: 'Times New Roman', Times, serif; 
+}
+
+article {
+    margin-bottom: 20px; 
+    margin-top: 20px;
+}
+
+article p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* este es importante igual*/
+}
+
+
+article table{
+    color: black;
+    /*background: linear-gradient(to right, #004D98, #A50044);*/
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.titulo{
+    font-weight: bold;
+}
+
+
+table {
+    border: 3px solid black; /* Aplica un borde negro de 2px a la tabla */
+    border-collapse: collapse; /* Colapsa los bordes de la tabla */
+}
+
+td, th {
+    border: 3px solid black; /* Aplica un borde negro de 1px a cada celda */
+    padding: 10px; /* Añade un pequeño espacio dentro de las celdas */
+}
+
+thead{
+    text-align: center;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.centrar{
+    text-align: center;
+}
+
+table {
+    margin: 0 auto; /* Centra la tabla horizontalmente */
+    border: 2px solid black;
+    border-collapse: collapse;
+    width: 80%; /* Establece un ancho específico para la tabla */
+}
+
+.izquierda{
+    float: left;
+}
+
+.derecha{
+    float: right;
+}

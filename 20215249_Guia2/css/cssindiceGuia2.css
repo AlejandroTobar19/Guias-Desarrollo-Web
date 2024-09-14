@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 50px;
+    font-size: 45px;
+}
+
+body{
+    background-color: wheat;
+}
+
+header{
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 100px;
+    margin-bottom: 25px;
+    font-size: 50px;
+    width: 100%;
+}
+
+
+section div{
+    text-align: center;
+}
+
+section div h2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.separador{
+    margin-top: 50px;
+}
+
+section div a:hover{
+    background-color: black;
+    color: white;
+}
+
+.titulo{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 50px;
+    font-size: 40px;
+}
+
+
+
+
