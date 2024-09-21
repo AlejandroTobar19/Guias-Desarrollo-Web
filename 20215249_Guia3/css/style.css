@@ -1,0 +1,125 @@
+@import url(https://font.googLeapis.com/css?family=Muli);
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Muli', sans-serif;
+    text-align: justify;
+}
+
+/* NOTA PARA ESTUDIO: Nótese que con estas reglas de estilo se importa una fuente externa desde google fonts. Además se
+realiza el “reset css” técnica que permite resetear los márgenes y rellenos que los navegadores aplican
+por defecto a los elementos HTML. Finalmente, se ocupa la fuente que se importó desde google fonts y
+se justifica todo el texto de la página.*/
+
+header{
+    background: #16a085;
+    height: 130px;
+    overflow: hidden;
+}
+
+footer{
+    margin-top: 20px;
+    background: #16a085;
+    height: 50px;
+}
+
+header div, footer div{
+    width: 80%;
+    margin: 0 auto;
+    color: white;
+}
+
+h1{
+    font-size: 2.3rem;
+    margin-bottom: 1rem;
+    padding-top: 0.5rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+/*NOTA PARA ESTUDIO: Note que dentro del header y del footer se coloca un contenedor div y a ese contenedor se le
+aplica un ancho del 80% y se “centra”mediante el uso de la declaración “margin: 0 auto”. */
+
+section{
+    margin: 0 auto;
+    width: 90%;
+    overflow: hidden;
+    position: relative;
+}
+
+section article{
+    font-size: 0.9rem;
+    height: 340px;
+    width: 32.33%;
+    border: 2px dashed #16a085;
+    padding: 1%;
+    text-align: center;
+}
+
+section article img{
+    height: 180px;
+    max-width: 80%;
+    margin: 5px auto;
+    display: block;
+}
+
+article{
+    float: left;
+    margin: 0.5%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+footer div{
+    padding-top: 1rem;
+}
+/*
+section article:nth-child(2){
+    background-color: rgba(70, 130, 180, 0.9);
+    position: relative;
+    left: 100px;
+    top: 50px;
+}
+*/
+
+/* el articulo se movio 100px a la derecha porque el metodo "left:" se basa en mover 
+el contenido de izquierda a derecha y el metodo "top:" se basa en mover el elemento 
+del borde de arriba a abajo*/
+
+/* los demas articulos no han tomado el espacio que se dejo del segundo articulo porque 
+el metodo de posicionamiento es "relativo" lo que hace que se respete el espacio que se deja
+por el contenido que se movio*/
+
+/* cambio de posicion de absoluto a relartivo*/
+
+section article:nth-child(2){
+    background-color: rgba(70, 130, 180, 0.9);
+    position: static;
+    left: 100px;
+    top: 50px;
+    display: none;
+}
+
+/* NOTA PARA ESTUDIO: . ¿A partir de qué posición se ha desplazo el segundo artículo? El article se ha desplazo 100
+pixeles desde la izquierda y 50 pixeles desde arriba a partir del body de la página. Esto ocurre
+porque el articulo busca el primer antecesor que tenga un posicionamiento no estático (es decir,
+relative u absolute) y a partir del origen de ese elemento se calcula su desplazamiento. Al no
+encontrar ese elemento, el desplazamiento se calcula desde el origen del elemento body. */
+
+/* SI, las otras cajas han tomado la psocion del espacio que dejo disponible el segundo articulo*/
+
+/*el posicionamienot relativo hace que un elemento se mueva de posicion correspondientemente de la posicion 
+que hay en body y ademas de eso respeta el posicionamiento que deja disponible el elemento que se movio.
+Mientras que el posicionamiento absoluto se mueve con respecto al punto de origen de la seccion y no se respeta el 
+espacio vacio que deja un elemento */
+
+/* la diferencia es que aunque ambos metodos permiten que siempre en la fuente de la pagian se reconozcan los elementos 
+que se incluyeron, el metodo visibility reconoce el elemento, solo que en la presentacion de la pagian decide ocultar
+el elemento por completo, ademas de eso, respeta el espacio que tiene un elemento. Mientras que el metodo display es diferente en el sentido que aunque reconozca en la fuente 
+el elemento, decide ocultarlo y ignora hasta el espacio que tomaria el elemento.
