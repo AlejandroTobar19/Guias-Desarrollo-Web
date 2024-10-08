@@ -90,3 +90,34 @@ footer p {
     font-size: 1rem;
 }
 
+/* Estilos para FODA, Restroalimentacion y Aprendizaje continuo */
+.foda, .retroalimentacion, .aprendizaje-continuo {
+    background-color: #ecf0f1;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.foda h2, .retroalimentacion h2, .aprendizaje-continuo h2 {
+    color: #16a085;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.foda ul, .retroalimentacion ul, .aprendizaje-continuo ul {
+    list-style: none;
+    padding: 0;
+}
+
+.foda ul li, .retroalimentacion ul li, .aprendizaje-continuo ul li {
+    margin: 10px 0;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.foda ul li strong, .retroalimentacion ul li strong, .aprendizaje-continuo ul li strong {
+    color: #2c3e50;
+}
+
