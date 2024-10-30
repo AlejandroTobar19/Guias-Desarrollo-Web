@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha de Estudiante</title>
+    <link rel="stylesheet" href="css/estilo_complementario.css">
+    <script src="js/validacionesFormulario.js" defer></script>
+</head>
+<body>
+    <form id="formularioEstudiante" onsubmit="return validarFormulario()">
+        <h2>Ficha de Estudiante</h2>
+
+        <label for="carnet">Carnet:</label>
+        <input type="text" id="carnet" required>
+
+        <label for="nombre">Nombre Completo:</label>
+        <input type="text" id="nombre" required>
+
+        <label for="dui">Número de DUI:</label>
+        <input type="text" id="dui" required>
+
+        <label for="nit">Número de NIT:</label>
+        <input type="text" id="nit" required>
+
+        <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+        <input type="date" id="fechaNacimiento" required>
+
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" required>
+
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" required>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
